@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "expo": "~49.0.7",
+    "expo-cli": "^6.3.10",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",
-    "react-native": "0.72.3"
+    "react-card-flip": "^1.2.0",
+    "react-native": "0.72.3",
+    "react-native-app": "^1.0.0",
+    "react-native-flip-card": "^3.5.7",
+    "react-native-material-dropdown": "^0.11.1",
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
