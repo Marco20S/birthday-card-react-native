@@ -90,6 +90,7 @@ export default function Main() {
                     Generate Card
                 </Text>
             </TouchableOpacity>
+               
 
             <br></br>
             <br></br>
