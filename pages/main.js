@@ -55,21 +55,21 @@ export default function Main() {
 
     return (
         <View>
-            <Text style={{ color: 'black', fontSize: 30, fontFamily: 'Calibri' }} > Birthday Card Generator</Text>
-            <br />
+            <Text style={{ color: 'gray', fontSize: 30, fontFamily: '' }} > Birthday Card Generator {"\n"}</Text>
+          
 
             <TextInput
-                style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 5, width: 300, height: 40 }}
+                style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 5, width: 340, height: 40 }}
                 onChangeText={(value) => setName(value)}
-                placeholder=' From: ' />
-            <br></br>
+                placeholder=' From: '  /><Text>{"\n"}</Text>
+                
+            
 
             <TextInput
-                style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 5, width: 300, height: 40 }}
+                style={{ borderColor: 'gray', borderWidth: 1, borderRadius: 5, width: 340, height: 40 }}
                 placeholder=' To: '
-                onChangeText={(value) => setReciever(value)} />
-            <br></br>
-            <br></br>
+                onChangeText={(value) => setReciever(value)} /> 
+            
 
 
             {/* <TextInput
@@ -84,16 +84,17 @@ export default function Main() {
                     title='Generate Card' /> */}
 
             <TouchableOpacity onPress={addState}>
-
-                <Text style={{ color: 'white', backgroundColor: 'gray', borderRadius: 5, width: 300, height: 50, 
-                textAlign: 'center', fontSize:20, justifyContent:'center', alignItems: 'center', marginTop:5}}>
-                    Generate Card
+            <Text>{"\n"}</Text>
+                <Text style={{ color: 'white', backgroundColor: 'gray', borderRadius: 5, width: 340, height: 50, 
+                textAlign: 'center', fontSize:20, justifyContent:'center', alignItems: 'center', marginTop:5}}> 
+                Generate Card
                 </Text>
             </TouchableOpacity>
+
+            <Text>{"\n"}</Text>
                
 
-            <br></br>
-            <br></br>
+            
             {data && <Card data={data} />}
 
 
