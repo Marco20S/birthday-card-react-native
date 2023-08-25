@@ -92,7 +92,8 @@ export default function Main() {
             </TouchableOpacity>
 
             <Text>{"\n"}</Text>
-               
+                   
+                   
 
             
             {data && <Card data={data} />}
